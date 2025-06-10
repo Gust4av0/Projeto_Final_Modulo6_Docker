@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: yellow;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-grande {
+  font-size: 18px;
+  padding: 14px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.login-button.pequeno {
+  width: 60%;
+  padding: 10px;
+  font-size: 14px;
+  margin: 10px auto 0;
+  display: block;
+}
+
+.login-button:hover {
+  background-color: #ffcc00;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.forgot-password:hover {
+  color: yellow;
+}
+
+.signup-link {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.signup-link:hover {
+  color: yellow;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.toggle-password-login {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 15px;
+  top: 60%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+}
+/* Esses estilos são mantidos para compatibilidade com padrões anteriores */
+.password-strength {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.password-strength.fraca {
+  color: red;
+}
+
+.password-strength.media {
+  color: yellow;
+}
+
+.password-strength.forte {
+  color: #28a745;
+}
+
+.senha-nao-coincide {
+  color: red;
+  font-size: 13px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* Overlay de carregamento */
+.overlay-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

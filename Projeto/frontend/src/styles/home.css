@@ -1,0 +1,56 @@
+.home-container {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/backgroundhome.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-content {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px 60px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+  max-width: 90%;
+}
+
+.home-content h1 {
+  font-size: 28px;
+  color: #ffeb00;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 18px;
+  color: #f2f2f2;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #ffeb00;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

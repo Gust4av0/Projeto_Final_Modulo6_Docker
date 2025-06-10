@@ -1,0 +1,133 @@
+.locadoras-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/backgroundlocadoras.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.locadoras-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.locadoras-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1100px;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+/* Título da página */
+.locadoras-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffeb00;
+}
+
+/* Botões superiores */
+.locadoras-filtro-botoes {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.locadoras-btn-adicionar {
+  background: #999999;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.locadoras-btn-adicionar:hover {
+  background: #0056b3;
+}
+
+/* ============================ TABELA ============================ */
+.locadoras-tabela-container {
+  background: #222;
+  padding: 12px;
+  border-radius: 15px;
+  border: 1px solid #666;
+  overflow-x: auto;
+}
+
+.locadoras-tabela {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.locadoras-tabela th {
+  background: #999999;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #444;
+}
+
+.locadoras-tabela td {
+  padding: 12px;
+  border: 1px solid #444;
+}
+
+.locadoras-tabela tr:nth-child(even) {
+  background: #2c2c2c;
+}
+
+.locadoras-tabela tr:nth-child(odd) {
+  background: #333;
+}
+
+.locadoras-tabela thead {
+  border-bottom: 2px solid #fff;
+}
+
+.locadoras-tabela tbody tr {
+  border-bottom: 1px solid #555;
+}
+
+/* BOTÕES DE AÇÃO */
+.locadoras-acoes {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center; /* centraliza verticalmente */
+  gap: 5px;
+}
+
+.locadoras-btn-acao {
+  background: white;
+  border: none;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.locadoras-btn-acao:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
