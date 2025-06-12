@@ -65,7 +65,7 @@ function Cadastro() {
     }
 
     try {
-      const response = await axios.post("http://localhost:8080/api/usuarios", {
+      const response = await axios.post("https://alugaaize.local/api/usuarios", {
         nome: name,
         email,
         cpf: cpfNumeros,

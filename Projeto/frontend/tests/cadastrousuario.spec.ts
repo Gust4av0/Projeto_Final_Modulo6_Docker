@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('deve cadastrar um novo usuário e redirecionar para o login', async ({ page }) => {
-  await page.goto('http://localhost:8080/login');
+  await page.goto('https://alugaaize.local/login');
 
   // Clica no link "Criar uma conta"
   await page.getByRole('link', { name: 'Criar uma conta' }).click();

@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('Criar, editar e excluir categoria SUV', async ({ page }) => {
   // 1. Login
-  await page.goto('http://localhost:8080/login');
+  await page.goto('https://alugaaize.local/login');
   await page.getByPlaceholder('E-mail').fill('gustavo@gmail.com');
   await page.getByPlaceholder('Senha').fill('Senha@123');
   await page.getByRole('button', { name: 'Entrar' }).click();

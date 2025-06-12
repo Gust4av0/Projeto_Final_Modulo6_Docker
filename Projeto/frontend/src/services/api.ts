@@ -1,9 +1,10 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:8080/api", // URL base da API
+  baseURL: "https://alugaaize.local/api", // URL base da API
 });
 
+// "http://localhost:8080/api"
 // URL API ANTIGA:  http://localhost:3000
 // Interceptor: adiciona o token no header das requisições
 api.interceptors.request.use((config) => {

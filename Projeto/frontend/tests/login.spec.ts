@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('login com usuário válido', async ({ page }) => {
-  await page.goto('http://localhost:8080/login');
+  await page.goto('https://alugaaize.local/login');
 
   // Aguarda que o botão "Entrar" esteja visível (garantia de que a tela carregou)
   await expect(page.getByText('Entrar')).toBeVisible();

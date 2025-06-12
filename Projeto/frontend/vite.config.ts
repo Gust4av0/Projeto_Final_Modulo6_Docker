@@ -12,9 +12,10 @@ export default defineConfig({
   server: {
     port: 3000,
     host: true,
+    allowedHosts: ['alugaaize.local'],
     proxy: {
       "/api": {
-        target: "http://backend:3000",
+        target: "http://backend-container:3000/",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
