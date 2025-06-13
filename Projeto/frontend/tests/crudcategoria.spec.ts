@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Criar, editar e excluir categoria SUV', async ({ page }) => {
+test('Criar, editar e excluir Categoria', async ({ page }) => {
   // 1. Login
   await page.goto('https://alugaaize.local/login');
   await page.getByPlaceholder('E-mail').fill('gustavo@gmail.com');

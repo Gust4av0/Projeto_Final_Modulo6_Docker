@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Criar, editar e excluir uma locadora', async ({ page }) => {
+test('Criar, editar e excluir uma Locadora', async ({ page }) => {
   await page.goto('https://alugaaize.local/login');
 
   await page.getByPlaceholder('E-mail').fill('gustavo@gmail.com');

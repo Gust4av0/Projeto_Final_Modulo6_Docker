@@ -49,14 +49,14 @@ sequelize.authenticate()
     console.error(`Conexão com o banco falhou`, error);
 });
 
-sequelize
-.sync({alter: true})
-.then(() => {
-  console.log("Database sincronizado com sucesso!")
-})
-.catch((error) => {
-  console.log(`Deu pau`, error);
-})
+// sequelize
+// .sync({alter: true})
+// .then(() => {
+//   console.log("Database sincronizado com sucesso!")
+// })
+// .catch((error) => {
+//   console.log(`Deu pau`, error);
+// })
 
 app.listen(port, () => {
   console.log(`Servidor rodando na porta: `, port);
