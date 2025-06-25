@@ -4,7 +4,7 @@ import axios from "axios";
 import "../styles/cadastro.css";
 import background from "../images/background.jpg";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-
+//teste
 function Cadastro() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -74,8 +74,12 @@ function Cadastro() {
       if (response.status === 201) {
         navigate("/");
       }
-    } catch (error: any) {
-      setError(error.response?.data?.error || "Erro ao cadastrar usuário.");
+    } catch (error) {
+      console.error("Erro ao cadastrar usuário:", error);
+      setError(
+        (error as { response?: { data?: { error?: string } } })?.response?.data?.error || 
+        "Erro ao cadastrar usuário."
+      );
     }
   };
 
