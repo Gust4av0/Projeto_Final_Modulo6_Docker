@@ -63,7 +63,7 @@ function Cadastro() {
       setError("As senhas não coincidem!");
       return;
     }
-      // ssassfffffffffx
+      // ssassfffffffffxx
     try {
       const response = await axios.post("https://alugaaize.local/api/usuarios", {
         nome: name,
