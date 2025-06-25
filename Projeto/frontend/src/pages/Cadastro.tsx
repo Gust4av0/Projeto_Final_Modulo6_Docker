@@ -4,7 +4,7 @@ import axios from "axios";
 import "../styles/cadastro.css";
 import background from "../images/background.jpg";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-//teste
+//teste6
 function Cadastro() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
